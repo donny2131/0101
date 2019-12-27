@@ -14,7 +14,7 @@ let broadcastt = new Discord.RichEmbed().setColor('#36393e')
 .setDescription(`**Please type the number of your chose**`)
 .setFooter('you can add to the message [user] = mention the user')
 message.channel.send(broadcastt).then(msg => {
-message.channel.awaitMessages(filter, {max: 1,time: 2000,errors: ['time']})
+message.channel.awaitMessages(filter, {max: 1,time: 5000,errors: ['time']})
 .then(collected => {if(collected.first().content === '1') {msg.delete(),message.channel.send(`**☑ Broadcast begin send....**`).then(m => {
 message.guild.members.map(member => {setTimeout(() => {member.send(args.replace('[user]',member).replace('[icon]',`https://cdn.discordapp.com/icons/${message.guild.id}/${message.guild.icon}.png?size=1024`)).then(() => {}).catch((err) => {});},);});})}
 if(collected.first().content === '2') {msg.delete(),message.channel.bulkDelete(1),message.channel.send(`**☑ Broadcast begin send.**`);
