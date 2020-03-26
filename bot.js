@@ -56,7 +56,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : unn ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setStatus("dnd")
+client.user.setStatus("idle")
 });
 
 client.login(process.env.BOT_TOKEN);
