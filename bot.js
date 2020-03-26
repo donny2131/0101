@@ -48,4 +48,5 @@ message.channel.bulkDelete(2);msgg.delete();message.channel.send('الكاست �
 })}).catch(myst =>{msgg.edit('Timed out.');})})
 }if(collected.first().content === '5'){} // لو تبي تضيف شي خامس :]
 }).catch(mys =>{msg.edit('Timed out to chose.')})})}});
+client.user.setStatus("idle")
 client.login(process.env.BOT_TOKEN);
