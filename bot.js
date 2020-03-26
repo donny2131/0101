@@ -48,4 +48,15 @@ message.channel.bulkDelete(2);msgg.delete();message.channel.send('الكاست �
 })}).catch(myst =>{msgg.edit('Timed out.');})})
 }if(collected.first().content === '5'){} // لو تبي تضيف شي خامس :]
 }).catch(mys =>{msg.edit('Timed out to chose.')})})}});
+
+client.on('ready', () => {
+   console.log(`----------------`);
+      console.log(`Desert Bot- Script By : un`);
+        console.log(`----------------`);
+      console.log(`ON ${client.guilds.size} Servers '     Script By : unn ' `);
+    console.log(`----------------`);
+  console.log(`Logged in as ${client.user.tag}!`);
+client.user.setStatus("dnd")
+});
+
 client.login(process.env.BOT_TOKEN);
