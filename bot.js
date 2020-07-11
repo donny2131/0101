@@ -1,10 +1,8 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 var prefix = "..";
-
-
-    var role = message.mentions.roles.first();
-                if(!role) {
+var role = message.mentions.roles.first();
+          if(!role) {
                   message.reply("لا توجد رتبة بهذا الاسم")
                     return;
                 }
@@ -14,5 +12,4 @@ var prefix = "..";
             message.channel.send(`لقد تم ارسال هذه الرسالة الى ${message.guild.members.filter(m => m.roles.get(role.id)).size} عضو`)
         }
     });
-
 client.login(process.env.BOT_TOKEN);
